@@ -3,6 +3,7 @@ import {Col, Row} from 'react-bootstrap';
 import PostList from '../../containers/PostList/PostList';
 import styles from './PostViewer.module.css'
 
+//Post Viewer Layout
 const PostViewer = () => (
     <div>
         <Row className={styles.TitleWrapper}>

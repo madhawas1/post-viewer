@@ -11,6 +11,7 @@ class CommentList extends Component {
         errorOccurred: false
     };
 
+    //Get Comments from REST API
     componentDidMount() {
 
         Axios.get(config.api.URL + '/posts/' + this.props.postId + '/comments')
@@ -22,6 +23,7 @@ class CommentList extends Component {
             })
     };
 
+    //Generate comments list
     getComments() {
 
         return this.state.comments.map(comment => {

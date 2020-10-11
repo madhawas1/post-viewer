@@ -11,6 +11,7 @@ class PostList extends Component {
         errorOccurred: false
     };
 
+    // Get Posts from REST API.
     componentDidMount() {
 
         Axios.get(config.api.URL + '/posts')
@@ -32,6 +33,7 @@ class PostList extends Component {
             });
     };
 
+    // Show comments when button clicked
     viewCommentsButtonClickHandler = (id) => {
 
         const updatedPosts = this.state.posts.map(post => {
@@ -50,6 +52,7 @@ class PostList extends Component {
         this.setState({posts: updatedPosts});
     };
 
+    // Generate Posts list.
     getPosts() {
 
         return this.state.posts.map(post => {
