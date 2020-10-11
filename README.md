@@ -1,5 +1,6 @@
 # post-viewer
 Application will display posts and related comments.
+*Java 11 Required*
 
 # How to Build and Run
 #### Clone Repository
