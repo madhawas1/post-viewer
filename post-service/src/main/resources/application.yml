@@ -10,7 +10,7 @@ logging:
 management:
   endpoints:
     web:
-      base-path: /api
+      base-path: /
 server:
   port: 3001
   servlet:
