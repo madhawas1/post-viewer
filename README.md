@@ -24,6 +24,11 @@ Application will display posts and related comments.
   cd ..\..\posts-ui
   npm install
 </pre>
+or
+<pre>
+  cd post-viewer\posts-ui
+  npm install
+</pre>
 
 #### Run UI Application
 <pre>
