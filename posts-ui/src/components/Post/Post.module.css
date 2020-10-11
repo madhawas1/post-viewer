@@ -1,0 +1,11 @@
+.PostWrapper {
+    margin-bottom: 10px;
+}
+
+.CommentWrapper {
+    background-color: rgba(0,0,0,.03);
+}
+
+.ViewCommentsText {
+    text-align: right;
+}

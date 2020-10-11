@@ -1,0 +1,18 @@
+.TopBar {
+    background-color: #3c8dbc;
+    text-align: right;
+}
+
+.TopBarText {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: #edefef;
+    margin-bottom: 5px;
+}
+
+.Layout {
+    padding: 20px;
+    border-radius: 10px;
+}

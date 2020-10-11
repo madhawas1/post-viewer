@@ -1,0 +1,12 @@
+.PostWrapper {
+    margin-bottom: 10px;
+}
+
+.AuthorName {
+    font-size: 14px;
+    color: #929292;
+}
+
+.ViewCommentsText {
+    text-align: right;
+}
