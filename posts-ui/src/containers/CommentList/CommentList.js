@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Comment from '../../components/Comment/Comment';
 import {Alert} from 'react-bootstrap';
 import Axios from "axios";
+import config from '../../config';
 
 class CommentList extends Component {
 
@@ -12,7 +13,7 @@ class CommentList extends Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8081/api/posts/' + this.props.postId + '/comments')
+        Axios.get(config.api.URL + '/posts/' + this.props.postId + '/comments')
             .then(response => {
                 this.setState({comments: response.data})
             })

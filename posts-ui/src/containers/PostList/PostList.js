@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Axios from "axios";
 import Post from '../../components/Post/Post';
 import {Alert} from "react-bootstrap";
+import config from '../../config';
 
 class PostList extends Component {
 
@@ -12,7 +13,7 @@ class PostList extends Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8081/api/posts')
+        Axios.get(config.api.URL + '/posts')
             .then(response => {
 
                 const updatedPosts = response.data.map(post => {
